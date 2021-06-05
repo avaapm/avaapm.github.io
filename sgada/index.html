@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Self-training Guided Adversarial Domain Adaptation For Thermal Imagery</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+	<meta property="og:title" content="Self-training Guided Adversarial Domain Adaptation For Thermal Imagery">
+	<meta property="og:url" content="https://avaapm.github.io/sgada/">
+	<meta name="keywords" content="self-training, domain adaptation, thermal image, fazil altinel, ibrahim batuhan akkaya">
+	<meta name="author" content="Hung-Yu Tseng">
+	<!-- jQuery -->
+	<script
+		src="https://code.jquery.com/jquery-3.1.0.min.js"
+		integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
+		crossorigin="anonymous"></script>
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 text-center">
+				<br>
+				<h1>Self-training Guided Adversarial Domain Adaptation For Thermal Imagery</h1>
+				<br>
+				<h4>Ibrahim&nbsp;Batuhan&nbsp;Akkaya<sup>1,2*</sup> &emsp; <a href="http://fazilaltinel.github.io/">Fazil&nbsp;Altinel</a><sup>1*</sup> &emsp; Ugur&nbsp;Halici<sup>2,3</sup>
+				</h4
+			</div>
+			<div class="col-xs-12 text-center">
+        <h4><sup>1</sup>Research&nbsp;Center,&nbsp;Aselsan&nbsp;Inc. &emsp; <sup>2</sup>Middle&nbsp;East&nbsp;Technical&nbsp;University &emsp; <sup>3</sup>Neuroscience&nbsp;and&nbsp;Neurotechnology&nbsp;Excellency&nbsp;Center &emsp;</h4>
+			</div>
+      <div class="col-xs-12 text-center">
+        <h4><sup>*</sup>&nbsp;indicates&nbsp;equal&nbsp;contribution</h4>
+			</div>
+		</div>
+		<br>
+		<br>
+		<br>
+		
+    <div class="row">
+			<div class="col-xs-12">
+				<div class="row">
+					<div class="col-xs-12 text-center">
+						<img src="teaser.png" width="800">
+					</div>
+				</div>
+			</div>
+		</div>
+		
+    <div class="row">
+			<div class="col-xs-12 text-left">
+				<h3>Abstract</h3>
+				<p >Deep models trained on large-scale RGB image datasets have shown tremendous success. It is important to apply such deep models to real-world problems. However, these models suffer from a performance bottleneck under illumination changes. Thermal IR cameras are more robust against such changes, and thus can be very useful for the real-world problems. In order to investigate efficacy of combining feature-rich visible spectrum and thermal image modalities, we propose an unsupervised domain adaptation method which does not require RGB-to-thermal image pairs. We employ large-scale RGB dataset MS-COCO as source domain and thermal dataset FLIR ADAS as target domain to demonstrate results of our method. Although adversarial domain adaptation methods aim to align the distributions of source and target domains, simply aligning the distributions cannot guarantee perfect generalization to the target domain. To this end, we propose a self-training guided adversarial domain adaptation method to promote generalization capabilities of adversarial domain adaptation methods. To perform self-training, pseudo labels are assigned to the samples on the target thermal domain to learn more generalized representations for the target domain. Extensive experimental analyses show that our proposed method achieves better results than the state-of-the-art adversarial domain adaptation methods. The code and models are publicly available.
+				</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12 text-left">
+				<h3>Links</h3>
+				<a href="https://arxiv.org/abs/1801.07939">
+					<button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-save-file" aria-hidden="true"></span> Paper</button>
+				</a>
+				<a href="https://github.com/avaapm/SGADA">
+					<button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Code</button>
+				</a>
+			</div>
+		</div>
+
+		<div class="row">
+      <div class="col-xs-12 text-left">
+        <h3>BibTeX</h3>
+
+      <pre>
+        @inproceedings{sgada2021,
+          title={Self-training Guided Adversarial Domain Adaptation For Thermal Imagery},
+          author={Akkaya, Ibrahim Batuhan and Altinel, Fazil and Halici, Ugur},
+          booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)},
+          year={2021}
+        }
+      </pre>
+    </div>
+
+		<div class="row">
+			<div class="col-xs-12 text-right">
+				<h5>Page source: <a href="https://hytseng0509.github.io/lecam-gan/">Hung-Yu&nbsp;Tseng</a> </h5>
+			</div>
+    </div>
+
+  </div>
+
+
+
+	<style type="text/css">
+.container {
+	background-color: #FFFFFF;
+}
+.teaser-img {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.img-responsive {
+	margin: auto;
+}
+
+.vidcontainer{
+    width: 256px;
+    height: 256px;
+    overflow:hidden;
+}
+#glass{
+    margin-left: -5px;
+    margin-right: -5px;
+    margin-top: -5px;
+    margin-bottom: -5px;
+}
+	</style>
+</body>
+</html>
